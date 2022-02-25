@@ -4,8 +4,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template: 200px 1fr / 200px 1fr;
   height: 100vh;
 }
 
@@ -17,6 +16,18 @@ body {
 .header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: white;
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.header .left {
+
+}
+
+.header .right {
+  justify-self: end;
 }
 
 .content {
