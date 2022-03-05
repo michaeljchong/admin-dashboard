@@ -1,6 +1,6 @@
 :root {
   --blue: rgb(0, 179, 255);
-  --yellow: rgb(255, 255, 0);
+  --orange: rgb(255, 196, 0);
   --grey: rgb(235, 235, 235);
   --white:  rgb(255, 255, 255);
 }
@@ -118,10 +118,36 @@ button:hover {
 }
 
 .project {
-  background-color: var(--white);
+  background-color: var(--orange);
   border-radius: 10px;
-  padding: 10px;
   box-shadow: 2px 2px 5px rgb(177, 177, 177);
+  display: grid;
+}
+
+.main-card {
+  background-color: var(--white);
+  margin-left: 7px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+}
+
+.main-card > * {
+  margin: 0;
+}
+
+.main-card > p {
+  color: grey;
+}
+
+.interact {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 15px;
 }
 
 .announcements {
