@@ -1,6 +1,6 @@
-<h1>Title</h1>
+<h1>Admin Dashboard</h1>
 
-<p>description. Check out the <a href=''>final product</a>.</p>
+<p>The purpose of this project was to practice intermediate CSS skills, in particular, creating layouts using CSS grid. Check out the <a href='https://michaeljchong.github.io/admin-dashboard/'>final product</a>.</p>
 
 <h2>Lesson's Learned:</h2>
 <ul>
@@ -14,7 +14,7 @@
 
 <h2>Project Extensions:</h2>
 <ul>
-    <li></li>
+    <li>Make the dashboard responsive and compatible across platforms</li>
 </ul>
 
 <h2>Language Features Used:</h2>
