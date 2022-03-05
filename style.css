@@ -1,7 +1,7 @@
 :root {
   --blue: rgb(0, 179, 255);
   --orange: rgb(255, 196, 0);
-  --grey: rgb(235, 235, 235);
+  --grey: rgb(232, 237, 245);
   --white:  rgb(255, 255, 255);
 }
 
@@ -77,6 +77,18 @@ button:hover {
 .notification {
   border: none;
   background-color: var(--white);
+}
+
+.user-icon {
+  background-color: var(--orange);
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+.mini {
+  height: 50px;
+  width: 50px;
 }
 
 .user {
