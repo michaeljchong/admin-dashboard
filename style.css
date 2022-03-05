@@ -110,7 +110,7 @@ button:hover {
   grid-area: 2 / 2 / 3 / 3;
   background-color: var(--grey);
   display: grid;
-  grid-template: 1fr 1fr / 4fr 1fr;
+  grid-template: auto auto / 2.5fr 1fr;
   grid-template-areas: 
     "projects announcements"
     "projects trending";
@@ -145,14 +145,16 @@ button:hover {
   display: grid;
   grid-template-rows: auto auto;
   justify-content: space-between;
+  height: 140px;
 }
 
 .main-card > * {
   margin: 0;
 }
 
-.main-card > p {
+p {
   color: grey;
+  font-size: smaller;
 }
 
 .interact {
@@ -162,10 +164,34 @@ button:hover {
   gap: 15px;
 }
 
-.announcements {
+.announcements-container {
   grid-area: announcements;
 }
 
+.announcements,
 .trending {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(177, 177, 177);
+  padding: 20px;
+  gap: 15px;
+}
+
+.announcements > * > *,
+.trending > * > * {
+  margin: 0;
+}
+
+.trending-container {
   grid-area: trending;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
+.trending > div > :first-child {
+  color: black;
 }
